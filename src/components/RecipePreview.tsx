@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Clock, Users, ChefHat } from "lucide-react";
 
 const RecipePreview = () => {
-  const whatsappNumber = "5511999999999"; // Substituir pelo número real
-  const whatsappMessage = encodeURIComponent("Quero conhecer mais receitas! Me envie o eBook completo 📚");
+  const whatsappNumber = "5532987031770"; // Substituir pelo número real
+  const whatsappMessage = encodeURIComponent(
+    "Quero conhecer mais receitas! Me envie o eBook completo 📚"
+  );
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   const sampleRecipes = [
@@ -13,22 +15,25 @@ const RecipePreview = () => {
       time: "15 min",
       serves: "2 pessoas",
       difficulty: "Fácil",
-      preview: "Uma explosão de cores e sabores com quinoa, abacate, tomate cereja, pepino e molho tahine caseiro..."
+      preview:
+        "Uma explosão de cores e sabores com quinoa, abacate, tomate cereja, pepino e molho tahine caseiro...",
     },
     {
       name: "Curry de Grão-de-Bico Cremoso",
-      time: "25 min", 
+      time: "25 min",
       serves: "4 pessoas",
       difficulty: "Fácil",
-      preview: "Curry aromático com leite de coco, grão-de-bico, espinafre e especiarias que aquecem o coração..."
+      preview:
+        "Curry aromático com leite de coco, grão-de-bico, espinafre e especiarias que aquecem o coração...",
     },
     {
       name: "Smoothie Verde Energético",
       time: "5 min",
-      serves: "1 pessoa", 
+      serves: "1 pessoa",
       difficulty: "Super Fácil",
-      preview: "Mistura refrescante de banana, espinafre, manga e água de coco. Energia pura para começar o dia..."
-    }
+      preview:
+        "Mistura refrescante de banana, espinafre, manga e água de coco. Energia pura para começar o dia...",
+    },
   ];
 
   return (
@@ -45,12 +50,15 @@ const RecipePreview = () => {
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {sampleRecipes.map((recipe, index) => (
-            <Card key={index} className="p-6 hover:shadow-medium transition-all duration-300 hover:-translate-y-2">
+            <Card
+              key={index}
+              className="p-6 hover:shadow-medium transition-all duration-300 hover:-translate-y-2"
+            >
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-foreground">
                   {recipe.name}
                 </h3>
-                
+
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Clock className="w-4 h-4" />
@@ -65,11 +73,11 @@ const RecipePreview = () => {
                     {recipe.difficulty}
                   </div>
                 </div>
-                
+
                 <p className="text-muted-foreground leading-relaxed">
                   {recipe.preview}
                 </p>
-                
+
                 <div className="text-center pt-4">
                   <span className="text-primary font-medium text-sm">
                     ✨ Continue lendo no eBook completo...
@@ -86,17 +94,20 @@ const RecipePreview = () => {
               Estas são apenas 3 das 30 receitas incríveis!
             </h3>
             <p className="text-lg opacity-90">
-              No eBook completo você encontra receitas para café da manhã, almoço, jantar, 
-              lanches e sobremesas. Tudo organizadinho e fácil de seguir.
+              No eBook completo você encontra receitas para café da manhã,
+              almoço, jantar, lanches e sobremesas. Tudo organizadinho e fácil
+              de seguir.
             </p>
-            <Button 
-              variant="accent" 
+            <Button
+              variant="accent"
               size="xl"
               className="text-sm sm:text-lg"
-              onClick={() => window.open(whatsappLink, '_blank')}
+              onClick={() => window.open(whatsappLink, "_blank")}
             >
               <MessageCircle className="w-6 h-6" />
-              <span className="hidden sm:inline">QUERO VER TODAS AS RECEITAS</span>
+              <span className="hidden sm:inline">
+                QUERO VER TODAS AS RECEITAS
+              </span>
               <span className="sm:hidden">VER TODAS AS RECEITAS</span>
             </Button>
           </div>

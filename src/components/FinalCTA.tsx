@@ -3,8 +3,10 @@ import { Card } from "@/components/ui/card";
 import { MessageCircle, Clock, Gift, Shield } from "lucide-react";
 
 const FinalCTA = () => {
-  const whatsappNumber = "5511999999999"; // Substituir pelo número real
-  const whatsappMessage = encodeURIComponent("🌱 Quero transformar minha alimentação! Me envie o eBook '30 Receitas Veganas Rápidas' por R$27");
+  const whatsappNumber = "5532987031770"; // Substituir pelo número real
+  const whatsappMessage = encodeURIComponent(
+    "🌱 Quero transformar minha alimentação! Me envie o eBook '30 Receitas Veganas Rápidas' por R$9,99"
+  );
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -12,18 +14,20 @@ const FinalCTA = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-1/4 w-24 h-24 bg-white rounded-full animate-float"></div>
-        <div className="absolute bottom-20 right-1/4 w-16 h-16 bg-white rounded-full animate-float" style={{ animationDelay: '1.5s' }}></div>
+        <div
+          className="absolute bottom-20 right-1/4 w-16 h-16 bg-white rounded-full animate-float"
+          style={{ animationDelay: "1.5s" }}
+        ></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          
           {/* Urgency Header */}
           <Card className="p-6 bg-warning text-warning-foreground mb-12 animate-glow">
             <div className="flex items-center justify-center space-x-3">
               <Clock className="w-6 h-6" />
               <p className="text-lg font-bold">
-                ⚡ OFERTA ESPECIAL: Por tempo limitado por apenas R$27!
+                ⚡ OFERTA ESPECIAL: Por tempo limitado por apenas R$9,99!
               </p>
             </div>
           </Card>
@@ -32,12 +36,15 @@ const FinalCTA = () => {
           <div className="space-y-8 text-white">
             <h2 className="text-4xl lg:text-6xl font-bold leading-tight">
               Comece sua transformação
-              <span className="block text-warning drop-shadow-lg [text-shadow:_2px_2px_4px_rgb(0_0_0_/_80%)]">HOJE MESMO!</span>
+              <span className="block text-warning drop-shadow-lg [text-shadow:_2px_2px_4px_rgb(0_0_0_/_80%)]">
+                HOJE MESMO!
+              </span>
             </h2>
-            
+
             <p className="text-xl lg:text-2xl opacity-90 leading-relaxed max-w-3xl mx-auto">
-              Não espere mais para ter uma alimentação que realmente nutre seu corpo e sua alma. 
-              Suas 30 receitas veganas estão a um clique de distância!
+              Não espere mais para ter uma alimentação que realmente nutre seu
+              corpo e sua alma. Suas 30 receitas veganas estão a um clique de
+              distância!
             </p>
 
             {/* Benefits Recap */}
@@ -68,22 +75,28 @@ const FinalCTA = () => {
             <Card className="p-8 bg-white/95 backdrop-blur-sm shadow-strong max-w-2xl mx-auto">
               <div className="space-y-6">
                 <div>
-                  <p className="text-muted-foreground">Valor normal: <span className="line-through">R$ 47</span></p>
-                  <p className="text-5xl font-bold text-primary">R$ 27</p>
-                  <p className="text-muted-foreground">via Pix ou cartão em até 12x</p>
+                  <p className="text-muted-foreground">
+                    Valor normal: <span className="line-through">R$ 29,99</span>
+                  </p>
+                  <p className="text-5xl font-bold text-primary">R$ 9,99</p>
+                  <p className="text-muted-foreground">
+                    via Pix ou cartão em até 12x
+                  </p>
                 </div>
-                
-                <Button 
-                  variant="hero" 
-                  size="xl" 
+
+                <Button
+                  variant="hero"
+                  size="xl"
                   className="w-full text-sm sm:text-xl py-6"
-                  onClick={() => window.open(whatsappLink, '_blank')}
+                  onClick={() => window.open(whatsappLink, "_blank")}
                 >
                   <MessageCircle className="w-8 h-8" />
-                  <span className="hidden sm:inline">SIM! QUERO TRANSFORMAR MINHA ALIMENTAÇÃO</span>
+                  <span className="hidden sm:inline">
+                    SIM! QUERO TRANSFORMAR MINHA ALIMENTAÇÃO
+                  </span>
                   <span className="sm:hidden">QUERO TRANSFORMAR AGORA!</span>
                 </Button>
-                
+
                 <div className="space-y-2">
                   <p className="text-sm text-muted-foreground">
                     ✅ Acesso imediato após pagamento
@@ -101,11 +114,11 @@ const FinalCTA = () => {
             {/* Final Message */}
             <div className="mt-12">
               <p className="text-lg opacity-90 max-w-2xl mx-auto">
-                <strong>Você está a apenas um passo</strong> de ter acesso às receitas que vão revolucionar 
-                sua cozinha e sua saúde. Clique agora e comece sua jornada para uma vida mais saudável!
+                <strong>Você está a apenas um passo</strong> de ter acesso às
+                receitas que vão revolucionar sua cozinha e sua saúde. Clique
+                agora e comece sua jornada para uma vida mais saudável!
               </p>
             </div>
-
           </div>
         </div>
       </div>
