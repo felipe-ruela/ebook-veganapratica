@@ -70,7 +70,7 @@ const Hero = () => {
               <div className="text-center space-y-4">
                 <div>
                   <p className="text-muted-foreground text-sm">Por apenas</p>
-                  <p className="text-4xl font-bold text-primary">R$ 9,99</p>
+                  <p className="text-4xl font-bold text-primary">R$ 27,00</p>
                   <p className="text-muted-foreground text-sm">
                     via Pix ou Cartão
                   </p>

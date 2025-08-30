@@ -5,7 +5,7 @@ import { MessageCircle, Clock, Gift, Shield } from "lucide-react";
 const FinalCTA = () => {
   const whatsappNumber = "5532987031770"; // Substituir pelo número real
   const whatsappMessage = encodeURIComponent(
-    "🌱 Quero transformar minha alimentação! Me envie o eBook '30 Receitas Veganas Rápidas' por R$9,99"
+    "🌱 Quero transformar minha alimentação! Me envie o eBook '30 Receitas Veganas Rápidas' por R$ 27,00"
   );
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -27,7 +27,7 @@ const FinalCTA = () => {
             <div className="flex items-center justify-center space-x-3">
               <Clock className="w-6 h-6" />
               <p className="text-lg font-bold">
-                ⚡ OFERTA ESPECIAL: Por tempo limitado por apenas R$9,99!
+                ⚡ OFERTA ESPECIAL: Por tempo limitado por apenas R$ 27,00!
               </p>
             </div>
           </Card>
@@ -76,9 +76,9 @@ const FinalCTA = () => {
               <div className="space-y-6">
                 <div>
                   <p className="text-muted-foreground">
-                    Valor normal: <span className="line-through">R$ 29,99</span>
+                    Valor normal: <span className="line-through">R$ 39,99</span>
                   </p>
-                  <p className="text-5xl font-bold text-primary">R$ 9,99</p>
+                  <p className="text-5xl font-bold text-primary">R$ 27,00</p>
                   <p className="text-muted-foreground">
                     via Pix ou cartão em até 12x
                   </p>
